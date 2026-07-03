@@ -1,6 +1,8 @@
 
 
 🍕 Pizza Runner — Order, Delivery & Revenue Analysis (SQL Case Study 2)
+
+
 📌 Business Problem
 
 Pizza Runner is a food delivery startup that wants to improve its operations using data analysis.
@@ -16,12 +18,16 @@ The goal is to clean the data and generate meaningful business insights from:
 Customer orders
 Runner deliveries
 Revenue performance
+
+
 🎯 Project Objectives
 Clean and standardize raw datasets
 Analyze customer ordering behavior
 Evaluate delivery performance
 Measure delivery efficiency
 Calculate revenue from successful deliveries
+
+
 🧰 Tools Used
 MySQL
 SQL Techniques:
@@ -32,6 +38,8 @@ Window Functions
 Date & Time Functions
 String Functions
 Data Cleaning
+
+
 🧹 Data Cleaning Summary
 
 Before analysis, the following cleaning steps were performed:
@@ -42,7 +50,10 @@ Standardized pickup time values
 Converted distance into numeric format (km)
 Converted duration into integer minutes
 Created cleaned tables for analysis
+
+
 📊 Analysis Performed
+
 🟢 Section A — Pizza Metrics
 Total pizzas ordered
 Unique customer orders
@@ -52,6 +63,7 @@ Customer pizza preferences
 Orders with extras and exclusions
 Hourly order trends
 Daily order trends
+
 🟢 Section B — Runner Performance
 Weekly runner registrations
 Average pickup time per runner
@@ -60,9 +72,12 @@ Average delivery distance per customer
 Fastest vs slowest delivery comparison
 Average speed per runner
 Delivery success rate
+
 🟢 Section C — Revenue Analysis
 Standard ingredients per pizza
 Revenue generated from successful deliveries
+
+
 📈 Key Insights
 Meat Lovers pizza was the most ordered item
 Most orders were successfully delivered
@@ -70,6 +85,8 @@ Peak ordering happens in the evening
 Delivery speed varies across runners
 Distance and duration affect delivery performance
 Revenue depends on successful deliveries
+
+
 💡 Business Recommendations
 Improve staffing during peak hours
 Optimize runner delivery efficiency
@@ -77,18 +94,23 @@ Promote high-demand pizzas
 Reduce delivery delays and cancellations
 Improve data quality and standardization
 Use KPIs for performance tracking
+
+
 🚀 Next Steps
 Build Power BI dashboard for insights visualization
 Automate SQL reporting using views
 Perform advanced delivery time analysis
 Move to next case study (Foodie-Fi or similar SQL project)
-Create end-to-end analytics portfolio
+
+
 📚 Resources
 https://8weeksqlchallenge.com/case-study-2/
 https://www.w3schools.com/sql/
 https://sqlbolt.com/
 https://mode.com/sql-tutorial/
 https://leetcode.com/problemset/database/
+
+
 🏁 Conclusion
 
 This project demonstrates how SQL can transform messy real-world data into meaningful business insights.
