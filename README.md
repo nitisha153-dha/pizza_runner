@@ -105,9 +105,13 @@ Move to next case study (Foodie-Fi or similar SQL project)
 
 📚 Resources
 https://8weeksqlchallenge.com/case-study-2/
+
 https://www.w3schools.com/sql/
+
 https://sqlbolt.com/
+
 https://mode.com/sql-tutorial/
+
 https://leetcode.com/problemset/database/
 
 
