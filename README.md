@@ -1,87 +1,88 @@
-#🍕 Pizza Runner — Order, Delivery & Revenue Analysis (SQL Case Study 2)
+
+
+🍕 Pizza Runner — Order, Delivery & Revenue Analysis (SQL Case Study 2)
 📌 Business Problem
 
-Pizza Runner is a food delivery startup that wants to improve its operations using data analysis. The dataset contains messy, inconsistent, and incomplete records that need to be cleaned before analysis.
+Pizza Runner is a food delivery startup that wants to improve its operations using data analysis.
+However, the dataset is messy and contains:
 
-The goal of this project is to analyze:
+Missing values
+Inconsistent formats
+Duplicate records
+Text-based numeric fields
 
-Customer order behavior
-Runner delivery performance
-Delivery efficiency
-Revenue from successful orders
+The goal is to clean the data and generate meaningful business insights from:
 
-This analysis helps improve decision-making and operational performance.
-
+Customer orders
+Runner deliveries
+Revenue performance
 🎯 Project Objectives
 Clean and standardize raw datasets
-Analyze customer ordering patterns
-Evaluate runner performance
-Measure delivery speed and efficiency
+Analyze customer ordering behavior
+Evaluate delivery performance
+Measure delivery efficiency
 Calculate revenue from successful deliveries
 🧰 Tools Used
 MySQL
-SQL (Joins, Aggregations, CASE WHEN, Window Functions, Date Functions)
-Data Cleaning Techniques
+SQL Techniques:
+JOINs
+GROUP BY
+CASE WHEN
+Window Functions
+Date & Time Functions
+String Functions
+Data Cleaning
 🧹 Data Cleaning Summary
 
 Before analysis, the following cleaning steps were performed:
 
 Removed duplicate records
-Converted "null", empty strings, and "NaN" to SQL NULL
-Standardized pickup time format
-Converted distance to numeric (km)
-Converted duration into numeric minutes
-Created cleaned working tables for analysis
+Converted 'null', empty strings, and 'NaN' to NULL
+Standardized pickup time values
+Converted distance into numeric format (km)
+Converted duration into integer minutes
+Created cleaned tables for analysis
 📊 Analysis Performed
 🟢 Section A — Pizza Metrics
-
-Business questions analyzed:
-
 Total pizzas ordered
 Unique customer orders
 Successful deliveries
-Pizza type distribution
+Count of each pizza type delivered
 Customer pizza preferences
 Orders with extras and exclusions
 Hourly order trends
 Daily order trends
 🟢 Section B — Runner Performance
-
-Business questions analyzed:
-
 Weekly runner registrations
 Average pickup time per runner
 Relationship between order size and preparation time
 Average delivery distance per customer
-Delivery time comparison (fastest vs slowest)
+Fastest vs slowest delivery comparison
 Average speed per runner
-Delivery success rate per runner
-🟢 Section D — Revenue Analysis
-
-Business questions analyzed:
-
+Delivery success rate
+🟢 Section C — Revenue Analysis
 Standard ingredients per pizza
-Revenue from successful deliveries
+Revenue generated from successful deliveries
 📈 Key Insights
 Meat Lovers pizza was the most ordered item
 Most orders were successfully delivered
-Evening hours showed peak order activity
-Runner speed and delivery efficiency varied across orders
-Distance and duration directly impact delivery performance
-Revenue is driven by successful completed deliveries
+Peak ordering happens in the evening
+Delivery speed varies across runners
+Distance and duration affect delivery performance
+Revenue depends on successful deliveries
 💡 Business Recommendations
-Increase runner availability during peak hours
-Improve delivery consistency across runners
-Promote high-demand pizzas for better revenue
-Reduce cancellations and delays to improve earnings
-Standardize data collection to avoid null/dirty values
-Use delivery KPIs for operational improvements
+Improve staffing during peak hours
+Optimize runner delivery efficiency
+Promote high-demand pizzas
+Reduce delivery delays and cancellations
+Improve data quality and standardization
+Use KPIs for performance tracking
 🚀 Next Steps
-Build Power BI dashboard for real-time insights
+Build Power BI dashboard for insights visualization
 Automate SQL reporting using views
-Perform advanced delivery time prediction analysis
-Move to next case study (Foodie-Fi / advanced SQL projects)
-Improve data pipeline for real-world analytics workflow
+Perform advanced delivery time analysis
+Move to next case study (Foodie-Fi or similar SQL project)
+Create end-to-end analytics portfolio
 📚 Resources
 https://8weeksqlchallenge.com/case-study-2/
 https://www.w3schools.com/sql/
@@ -90,4 +91,5 @@ https://mode.com/sql-tutorial/
 https://leetcode.com/problemset/database/
 🏁 Conclusion
 
-This project demonstrates how SQL can be used to clean messy real-world datasets and generate meaningful business insights. By analyzing customer orders, delivery performance, and revenue data, we can improve operational efficiency, customer experience, and overall business decision-making.
+This project demonstrates how SQL can transform messy real-world data into meaningful business insights.
+It covers data cleaning, transformation, analysis, and reporting to improve decision-making in a food delivery system.
