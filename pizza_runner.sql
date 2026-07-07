@@ -409,3 +409,39 @@ SUM(
 FROM customer_orders_clean co
 JOIN pizza_names pn
     ON co.pizza_id = pn.pizza_id;
+# What if there was an additional $1 charge for any pizza extras? and Add cheese is $1 extra    
+SELECT
+    SUM(
+        CASE
+            WHEN pn.pizza_name = 'Meatlovers' THEN 12
+            WHEN pn.pizza_name = 'Vegetarian' THEN 10
+            ELSE 0
+        END
+    ) +
+    SUM(
+        CASE
+            WHEN co.extras IS NULL
+                 OR co.extras = ''
+                 OR co.extras = 'null'
+            THEN 0
+            ELSE LENGTH(co.extras)
+                 - LENGTH(REPLACE(co.extras, ',', ''))
+                 + 1
+        END
+    ) AS total_revenue
+FROM customer_orders_clean co
+JOIN runner_orders_clean ro
+    ON co.order_id = ro.order_id
+JOIN pizza_names pn
+    ON co.pizza_id = pn.pizza_id
+WHERE ro.cancellation IS NULL;
+
+#The Pizza Runner team now wants to add an additional ratings system that allows customers to rate their runner,how would you design an additional table for this new dataset - 
+# generate a schema for this new table and insert your own data for ratings for each successful customer order between 1 to 5.
+CREATE TABLE runner_ratings (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    runner_id INT,
+    rating INT CHECK (rating BETWEEN 1 AND 5)
+);
+select* from runner_ratings;
